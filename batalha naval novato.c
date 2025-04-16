@@ -2,7 +2,7 @@
 
 int main() {
 
-    char colunas[10] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'};
+    char linhas[10] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'};
 
 
     int tabuleiro[10][10] = {0};
@@ -20,7 +20,7 @@ int main() {
 
     printf("TABULEIRO BATALHA NAVAL\n    ");  
     for (int i = 0; i < 10; i++) {
-        printf("%c ", colunas[i]);
+        printf("%c ", linhas[i]);
     }
     printf("\n");
 
@@ -29,7 +29,7 @@ int main() {
         printf("%2d  ", i + 1);  
         for (int j = 0; j < 10; j++) {
             if (tabuleiro[i][j] == 3){
-                printf("\033[1;32m%d\033[0m ", tabuleiro[i][j]); // cor, só pra facilitar a visualização na hora de printar
+                printf("\033[1;32m%d\033[0m ", tabuleiro[i][j]);
             } else {
                 printf("%d ", tabuleiro[i][j]);
             }
