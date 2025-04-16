@@ -18,14 +18,14 @@ int main() {
     tabuleiro[7][1] = 3;
 
 
-    printf("TABULEIRO BATALHA NAVAL\n    ");  
+    printf("TABULEIRO BATALHA NAVAL\n    ");  //a b c d etc...
     for (int i = 0; i < 10; i++) {
         printf("%c ", linhas[i]);
     }
     printf("\n");
 
 
-    for (int i = 0; i < 10; i++) {
+    for (int i = 0; i < 10; i++) { 
         printf("%2d  ", i + 1);  
         for (int j = 0; j < 10; j++) {
             if (tabuleiro[i][j] == 3){
